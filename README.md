@@ -40,5 +40,9 @@ Pour installer express et ajouter dans package.json la dépendance à express : 
 
 On peut déjà écrire notre premier serveur node express. Si vous n'avez rien changé dans les propositions du package.json, votre fichier de démarrage serveur est index.js
 
+Avec notre premier code index.js, on a juste créé un serveur http qui écoute sur le port 3000 et une ressource racine ( / ) qui reçoit des requêtes http GET et renvoie "hello world!". Pour tester, il suffit de démarrer votre serveur avec la commande : node index.js
 
+Puis dans votre navigateur : localhost:3000
+
+vous devriez voir afficher "hello world !"
 
