@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/natoine/tutonodejsinit/issues"
   },
-  "homepage": "https://github.com/natoine/tutonodejsinit#readme"
+  "homepage": "https://github.com/natoine/tutonodejsinit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
