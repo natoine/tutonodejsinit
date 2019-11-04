@@ -36,3 +36,9 @@ Express est une surcouche à node qui facilite la syntaxe de la gestion des requ
 
 Pour installer express et ajouter dans package.json la dépendance à express : npm install express
 
+## index.js
+
+On peut déjà écrire notre premier serveur node express. Si vous n'avez rien changé dans les propositions du package.json, votre fichier de démarrage serveur est index.js
+
+
+
