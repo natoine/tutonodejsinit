@@ -30,3 +30,9 @@ Pour initialiser le projet et créer le package.json, taper la commande dans le 
 
 Puis valider les options appropriées à votre projet.
 
+## Express.js
+
+Express est une surcouche à node qui facilite la syntaxe de la gestion des requêtes http. 
+
+Pour installer express et ajouter dans package.json la dépendance à express : npm install express
+
