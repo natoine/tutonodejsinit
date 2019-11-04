@@ -6,7 +6,7 @@ A la création du projet sur github, pensez à sélectionner un .gitignore Node
 
 ## sous windows
  
- site de téléchargelent : https://nodejs.org/fr/download/
+ site de téléchargement : https://nodejs.org/fr/download/
 
 ## sous linux
 
