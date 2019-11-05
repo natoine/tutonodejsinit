@@ -33,6 +33,14 @@ app.get('/names', function(req,res) {
     })
 })
 
+app.get('/ehpads' ,function(req,res){
+    var url = "https://www.pour-les-personnes-agees.gouv.fr/annuaire-ehpad-en-hebergement-permanent/34/0"
+    fetchUrl(url , function(error, meta, body){
+        res.write(body.toString())
+        res.end()
+    })
+})
+
 //static ressources
 
 app.get('/index', function(req,res) {
