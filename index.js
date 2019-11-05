@@ -6,8 +6,10 @@ const fs = require('fs')
 var app = express();
 
 app.get('/', function (req, res) {
-    res.send('Hello World!')
+    res.send('Hello, vous êtes à la racine de ce serveur ! allez voir /index')
   })
+
+//API
 
 app.get('/user/:name', function(req, res) {
 	var age=''+req.query.age;
@@ -16,16 +18,6 @@ app.get('/user/:name', function(req, res) {
 	}else{
 	(res.send('Hello '  + req.params.name));
 	}
-})
-
-app.get('/index', function(req,res) {
-	fs.readFile('index.html', function(err, html) {
-	if(err){throw err;}
-	res.writeHead(200, {'Content-Type': 'text/html'})
-            res.write(html)
-            res.end()
-	})
-
 })
 
 app.get('/names', function(req,res) {
@@ -38,6 +30,18 @@ app.get('/names', function(req,res) {
             res.csv([{name : 'toto'}, {name : 'baptiste'}, {name : 'gabriel'}]);
         }
     })
+})
+
+//static ressources
+
+app.get('/index', function(req,res) {
+	fs.readFile('index.html', function(err, html) {
+	if(err){throw err;}
+	res.writeHead(200, {'Content-Type': 'text/html'})
+            res.write(html)
+            res.end()
+	})
+
 })
 
 app.listen(3000, function () {
