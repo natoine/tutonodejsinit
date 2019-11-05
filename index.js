@@ -1,5 +1,6 @@
-var express = require("express");/* npm install express */
+var express = require("express")/* npm install express */
 var csv = require('csv-express')/* npm install csv-express*/
+var fetchUrl = require("fetch").fetchUrl
 
 const fs = require('fs')
 
