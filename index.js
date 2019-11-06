@@ -1,6 +1,7 @@
 var express = require("express")/* npm install express */
 var csv = require('csv-express')/* npm install csv-express*/
 var fetchUrl = require("fetch").fetchUrl
+var cheerio = require('cheerio')
 
 const fs = require('fs')
 
@@ -37,6 +38,18 @@ app.get('/ehpads' ,function(req,res){
     var url = "https://www.pour-les-personnes-agees.gouv.fr/annuaire-ehpad-en-hebergement-permanent/34/0"
     fetchUrl(url , function(error, meta, body){
         res.write(body.toString())
+        res.end()
+    })
+})
+
+app.get('/amazon' , function(req, res){
+    var url = "https://www.amazon.fr/s?k=switch"
+    fetchUrl(url , function(error, meta, body){
+        var html = body.toString()
+        var parsedHTML = cheerio.load(html)
+        var priceselt = parsedHTML(".a-price-whole")
+        console.log("nb prices" , priceselt.length )
+        res.write(html)
         res.end()
     })
 })
