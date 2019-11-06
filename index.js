@@ -1,3 +1,5 @@
+const port     = process.env.PORT || 8080
+
 var express = require("express")/* npm install express */
 var csv = require('csv-express')/* npm install csv-express*/
 var fetchUrl = require("fetch").fetchUrl
@@ -69,6 +71,6 @@ app.get('/index', function(req,res) {
 
 })
 
-app.listen(3000, function () {
-    console.log('Example app listening on port 3000!')
+app.listen(port, function () {
+    console.log(`deploy on PORT : ${port}`)
   });
