@@ -46,5 +46,16 @@ Avec notre premier code index.js, on a juste créé un serveur http qui écoute 
 
 Puis dans votre navigateur : localhost:3000
 
-vous devriez voir afficher "hello world !"
+vous devriez voir afficher "Hello, vous êtes à la racine de ce serveur ! allez voir /index"
 
+# A quoi sert le code de ce projet ?
+
+Ce tuto est un ensemble d'exemple de code nodejs de ce qui est demandé en projet de master 2 MISAHS.
+
+Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serveur nodejs qui :
+- réalise un mashup à partir de plusieurs API web, ou en faisant du scrapping de page web html
+- propose une API web ( un ensemble de routes renvoyant des données )
+- les routes doivent être bien construites ( réflexion sur des URL explicites, éviter les usages de paramètres dans les requêtes http, bon usage des méthodes HTTP )
+- les données doivent être accessibles dans plusieurs formats via une mécanique de négociation de contenu server-driven
+
+## Explicitation des exemples de ce tuto
