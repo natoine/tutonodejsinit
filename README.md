@@ -60,4 +60,4 @@ Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serve
 
 ## Explicitation des exemples de ce tuto
 - GET /user/:name permet d'afficher hello [name]. Et, si l'utilisateur passe un paramètre age, hello [name] tu as [age] ans
-
+Cette méthode montre comment récupérer des variables dans l'URL ( :name ) et des variables en paramètre de requête ( ?age= )
