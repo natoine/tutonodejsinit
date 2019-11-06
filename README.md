@@ -59,7 +59,7 @@ Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serve
 - les données doivent être accessibles dans plusieurs formats via une mécanique de négociation de contenu server-driven
 
 ## Explicitation des exemples de ce tuto
-- GET /user/:name permet d'afficher hello [name]. Et, si l'utilisateur passe un paramètre age, hello [name] tu as [age] ans
+- GET /user/:name permet d'afficher hello [name]. Et, si l'utilisateur passe un paramètre age, hello [name] tu as [age] ans.
 Cette méthode montre comment récupérer des variables dans l'URL ( :name ) et des variables en paramètre de requête ( ?age= )
 - GET /names permet de renvoyer une liste de noms en json ou en csv en fonction du header accept de la requête http. 
-Cette méthode est une illustration de la négociation de contenu server-driven
+Cette méthode est une illustration de la négociation de contenu server-driven.
