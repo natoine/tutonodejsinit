@@ -47,10 +47,12 @@ app.get('/amazon' , function(req, res){
     fetchUrl(url , function(error, meta, body){
         var html = body.toString()
         var parsedHTML = cheerio.load(html)
-        var priceselt = parsedHTML(".a-price-whole")
-        console.log("nb prices" , priceselt.length )
-        res.write(html)
-        res.end()
+        var prices = []
+        parsedHTML(".a-price-whole").each(function(i, elem) {
+            prices[i] = cheerio.load(elem).text()
+        })
+        //var prices = Array.from(priceselt).map(elt => elt.text())
+        res.json(prices)
     })
 })
 
