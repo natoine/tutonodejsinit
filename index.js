@@ -42,8 +42,9 @@ app.get('/ehpads' ,function(req,res){
     })
 })
 
-app.get('/amazon' , function(req, res){
-    var url = "https://www.amazon.fr/s?k=switch"
+app.get('/amazon/:productname' , function(req, res){
+    var url = `https://www.amazon.fr/s?k=${req.params.productname}`
+    console.log("url", url)
     fetchUrl(url , function(error, meta, body){
         var html = body.toString()
         var parsedHTML = cheerio.load(html)
