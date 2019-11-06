@@ -59,3 +59,5 @@ Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serve
 - les données doivent être accessibles dans plusieurs formats via une mécanique de négociation de contenu server-driven
 
 ## Explicitation des exemples de ce tuto
+- GET /user/:name permet d'afficher hello [name]. Et, si l'utilisateur passe un paramètre age, hello [name] tu as [age] ans
+
