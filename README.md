@@ -63,3 +63,4 @@ Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serve
 Cette méthode montre comment récupérer des variables dans l'URL ( :name ) et des variables en paramètre de requête ( ?age= )
 - GET /names permet de renvoyer une liste de noms en json ou en csv en fonction du header accept de la requête http. 
 Cette méthode est une illustration de la négociation de contenu server-driven.
+- GET /amazon/:productname montre comment faire une requête http fetch côté serveur, et un exemple de scrapping de html avec cheerio.
