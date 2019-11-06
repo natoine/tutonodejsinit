@@ -4,6 +4,8 @@ A la création du projet sur github, pensez à sélectionner un .gitignore Node
 
 Une bonne ressource pour l'installation de Node : https://oncletom.io/node.js/v1/chapter-02/
 
+Ce serveur est déployé sur heroku et vous pouvez le tester là : https://tutonodejsmaster.herokuapp.com/
+
 # installation de node.js
 
 node vient avec un gestionnaire de paquets pour les librairies : npm.
