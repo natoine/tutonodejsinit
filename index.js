@@ -4,10 +4,12 @@ var express = require("express")/* npm install express */
 var csv = require('csv-express')/* npm install csv-express*/
 var fetchUrl = require("fetch").fetchUrl
 var cheerio = require('cheerio')
-
+var cors = require('cors')
 const fs = require('fs')
 
 var app = express();
+
+app.use(cors())
 
 app.get('/', function (req, res) {
     res.send('Hello, vous êtes à la racine de ce serveur ! allez voir /index')
