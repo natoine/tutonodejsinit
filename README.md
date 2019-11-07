@@ -58,7 +58,12 @@ Les étudiants en master 2 MIASHS doivent coder et déployer sur Heroku un serve
 - les routes doivent être bien construites ( réflexion sur des URL explicites, éviter les usages de paramètres dans les requêtes http, bon usage des méthodes HTTP )
 - les données doivent être accessibles dans plusieurs formats via une mécanique de négociation de contenu server-driven
 
-## Explicitation des exemples de ce tuto
+## Réglage de CORS sur any
+Une bonne ressource pour rapidement savoir règler la politique CORS en node js express : https://medium.com/@alexishevia/using-cors-in-express-cac7e29b005b
+
+Ici, dans le projet on a laissé le réglage any ( * )
+
+## Explicitation des routes de ce tuto
 - GET /user/:name permet d'afficher hello [name]. Et, si l'utilisateur passe un paramètre age, hello [name] tu as [age] ans.
 Cette méthode montre comment récupérer des variables dans l'URL ( :name ) et des variables en paramètre de requête ( ?age= )
 - GET /names permet de renvoyer une liste de noms en json ou en csv en fonction du header accept de la requête http. 
